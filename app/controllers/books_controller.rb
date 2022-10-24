@@ -7,6 +7,7 @@ class BooksController < ApplicationController
 
     book = Book.new(list_params)
 
+  end
     book.save
 
     redirect_to 'top'
@@ -26,4 +27,3 @@ class BooksController < ApplicationController
   def book_params
    parms.require(:book).pemit(:title, :body)
   end
-end
