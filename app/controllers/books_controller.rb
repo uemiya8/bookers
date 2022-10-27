@@ -31,8 +31,6 @@ class BooksController < ApplicationController
       @books = Book.all
       render :edit
      end
-    
-   
   end
   
   def destroy
